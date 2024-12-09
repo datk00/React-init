@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 
 
@@ -14,4 +14,5 @@ function App() {
 }
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = document.getElementById('root')
+ReactDOM.createRoot(root).render(<App />)
